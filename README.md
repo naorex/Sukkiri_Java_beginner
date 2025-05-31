@@ -1,5 +1,6 @@
 # Confirmed version
 
-java 23.0.1 2024-10-15
-Java(TM) SE Runtime Environment (build 23.0.1+11-39)
-Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
+## on Docker image "eclipse-temurin"
+openjdk version "21.0.7" 2025-04-15 LTS
+OpenJDK Runtime Environment Temurin-21.0.7+6 (build 21.0.7+6-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.7+6 (build 21.0.7+6-LTS, mixed mode, sharing)
