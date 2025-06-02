@@ -40,5 +40,13 @@ public class S03Variables {
         final double PI = 3.14; // use BLOCK LETTER in general
         //PI = 10; // => raise Error
 
+        // Text Block
+        // indent is automatically considered as shown, when compile.
+        String block = """
+                       name: MyName
+                       Prof: Python, Ruby, Java, JavaScript
+                       """;
+        System.out.println(block);
+
     }
 }
