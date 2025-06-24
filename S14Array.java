@@ -12,7 +12,7 @@ public class S14Array {
         scores[1] = 30;
         System.out.println(scores[1]);
 
-        // 省略した記法の例
+        // 省略した記法の例2種類
         int[] scores2 = new int[] {20, 30, 40, 50, 60};
         int[] scores3 = {20, 30, 40, 50, 60};
         System.out.println(scores2[2] + ", " + scores3[3]); // => 40, 50
