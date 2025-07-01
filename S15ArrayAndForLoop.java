@@ -24,5 +24,21 @@ public class S15ArrayAndForLoop {
             }
         }
         System.out.println("50点以上の科目の数:" + count);
-    }
+
+        // 例4 省略した書き方
+        int seq[] = new int[10];
+        for (int i = 0; i < seq.length; i++) {
+            seq[i] = new java.util.Random().nextInt(4);
+        }
+
+        char[] base = {'A', 'T', 'G', 'C'};
+        for (int i = 0; i < seq.length; i++) {
+            System.out.println(base[seq[i]] + " ");
+        }
+
+        // 例5 拡張For文　すっきり書ける。例1と同じ内容
+        for (int value : scores) {
+            System.out.println(value);
+        }
+     }
 }
