@@ -5,7 +5,7 @@ FROM eclipse-temurin:22-jdk-noble
 RUN apt -y update && apt -y upgrade
 RUN apt -y install \
     # For development and debug
-    bash curl vim net-tools zip \
+    bash curl vim net-tools zip git sudo \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
 
