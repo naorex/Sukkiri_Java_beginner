@@ -8,6 +8,6 @@ public class S25Array {
 
     public static void main(String[] args) {
         int[] array = {1,2,3};
-        printArray(array); // 配列を渡す（厳密には参照先のポインターを渡す）
+        printArray(array); // 配列を渡す（厳密には参照先のポインターを渡している。参照渡し）
     }
 }
