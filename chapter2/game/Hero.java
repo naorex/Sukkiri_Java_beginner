@@ -1,6 +1,14 @@
 public class Hero {
     String name;
     int hp;
+
+    // 剣クラスのフィールド（別途定義した Sword型）を定義しておく。"has-a" のクラス同士の関係。
+    Sword sword;
+
+    public void attack() {
+        System.out.println(this.name + "は攻撃した！");
+        System.out.println("敵に5ポイントのダメージを与えた！");
+    }
     public void sleep() {
         this.hp = 100; // this は自身のインスタンスへの変数設定で用いる。（Python でいう self）
         System.out.println(this.name + "は、眠って回復した！");
@@ -20,5 +28,12 @@ public class Hero {
         System.out.println(this.name + "は逃げ出した！");
         System.out.println("GAME OVER");
         System.out.println("最終HPは" + this.hp + "でした");
+    }
+
+    public Hero(String name) {
+        // Java のコンストラクタ定義方法。
+        // クラス名と同じメソッド名に設定、戻り値無しとする。
+        this.hp = 100;
+        this.name = name; // 引数でnameフィールドを初期化
     }
 }
