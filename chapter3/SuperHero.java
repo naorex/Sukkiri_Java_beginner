@@ -12,4 +12,9 @@ public class SuperHero extends Hero {
         this.flying = false;
         System.out.println("着地した！");
     }
+
+    public void run() {
+        // 親クラスにも
+        System.out.println(this.name + "は撤退した！");
+    }
 }
