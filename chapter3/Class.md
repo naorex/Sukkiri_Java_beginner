@@ -6,6 +6,8 @@ class Hero{
     +hp int
     +attack() void
     +run() void
+    +slip() void
+    +Hero() void
 }
 
 class SuperHero{
@@ -13,6 +15,8 @@ class SuperHero{
     +fly() void
     +land() void
     +run() void
+    +attack() void
+    +SuperHero() void
 }
 
 Hero <|-- SuperHero : inheritance

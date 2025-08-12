@@ -14,7 +14,21 @@ public class SuperHero extends Hero {
     }
 
     public void run() {
-        // 親クラスにも
+        // 親クラスにあるメソッドをオーバーライド
         System.out.println(this.name + "は撤退した！");
     }
+
+    public void attack(Matango m) {
+        // 親クラスのメソッドを呼び出しつつオーバーライドする場合は "super"をつける。
+        super.attack(m);
+        if (this.flying) {
+            super.attack(m);
+        }
+    }
+
+    public SuperHero() {
+        super(); // 親クラスのコンストラクタを書くのが正式な作法。（インスタンス生成の際には親クラスのコンストラクタから呼び出される仕様のため。記載自体は省略しても同じ動作をする。コンストラクタ自体は継承しているわけではない。）
+        System.out.println("SuperHeroのコンストラクタが動作");
+    }
+
 }

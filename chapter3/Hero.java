@@ -11,4 +11,15 @@ public class Hero {
     public void run() {
         System.out.println(this.name + "は逃げ出した！");
     }
+
+    public final void slip() {
+        // 宣言に final を付けると子クラスでオーバーライド不可に出来る。
+        this.hp -= 5;
+        System.out.println(this.name + "は転んだ！");
+        System.out.println("5のダメージ");
+    }
+
+    public Hero() {
+        System.out.println("Heroのコンストラクタが動作");
+    }
 }
