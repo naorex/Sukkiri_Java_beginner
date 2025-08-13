@@ -19,6 +19,6 @@ class SuperHero{
     +SuperHero() void
 }
 
-Hero <|-- SuperHero : inheritance
+Hero <|-- SuperHero : inheritance</br>("is-a" relation)
 
 ```
