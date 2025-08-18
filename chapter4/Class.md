@@ -2,7 +2,7 @@
 classDiagram
 
 class Character["Character (abstract)"]{
-    +name string
+    +name String
     +hp int
     +run() void
     +attack() abstract

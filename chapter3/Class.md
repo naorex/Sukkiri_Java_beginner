@@ -2,7 +2,7 @@
 classDiagram
 
 class Hero{
-    +name string
+    +name String
     +hp int
     +attack() void
     +run() void
@@ -11,7 +11,7 @@ class Hero{
 }
 
 class SuperHero{
-    +flying bool
+    +flying boolean
     +fly() void
     +land() void
     +run() void
