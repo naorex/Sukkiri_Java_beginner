@@ -8,4 +8,14 @@ class Character["Character (abstract)"]{
     +attack() abstract
 }
 
+class Dancer{
+    +name String
+    +hp int
+    +run() void
+    +dance() void
+    +attack() void
+}
+
+Character <|-- Dancer : inheritance</br>("is-a" relation)
+
 ```

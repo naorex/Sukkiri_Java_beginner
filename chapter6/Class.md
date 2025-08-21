@@ -1,27 +1,27 @@
 ```mermaid
 classDiagram
 
+class Character["Character (interface)"]{
+    +name String
+    +hp int
+    +run() abstract
+}
+
 class Hero{
     +name String
     +hp int
-    +attack() void
     +run() void
-    +slip() void
     +Hero() void
 }
 
 class SuperHero{
     +name String
     +hp int
-    +flying boolean
-    +fly() void
-    +land() void
     +run() void
-    +attack() void
-    +slip() void
     +SuperHero() void
 }
 
+Character <|-- Hero : inheritance</br>("is-a" relation)
 Hero <|-- SuperHero : inheritance</br>("is-a" relation)
 
 ```
