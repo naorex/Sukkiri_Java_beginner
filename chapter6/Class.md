@@ -37,3 +37,19 @@ Character <|-- Hero : inheritance</br>("is-a" relation)
 Hero <|-- SuperHero : inheritance</br>("is-a" relation)
 Character <|-- Wizard : inheritance</br>("is-a" relation)
 ```
+---
+
+```mermaid
+classDiagram
+
+class Monster["Monster (abstract)"]{
+    +run()
+}
+
+class Slime{
+    +run()
+}
+
+Monster <|-- Slime : inheritance</br>("is-a" relation)
+
+```
