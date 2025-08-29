@@ -21,6 +21,7 @@ class SuperHero{
     +hp int
     +run() void
     +attack() void
+    +fly() void
     +SuperHero() void
 }
 

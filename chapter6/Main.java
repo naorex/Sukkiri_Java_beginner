@@ -9,5 +9,10 @@ public class Main {
         // SuperHero の親を辿ると Character 型があるため、この定義が可能
         Character c = new SuperHero();
 
+        if (c instanceof SuperHero sh) {
+            // オブジェクトc を SuperHero 型の sh へ代入しなおす
+            // instanceof を付ける事で安全に動作するかをチェックできる
+            sh.fly();
+        }
     }
 }
