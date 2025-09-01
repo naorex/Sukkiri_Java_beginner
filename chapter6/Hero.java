@@ -7,11 +7,12 @@ public class Hero extends Character {
         System.out.println(this.name + "は逃げ出した");
     }
 
-    public void attack(Matango m) {
+    public void attack(Monster m) {
         // オーバーライド
+        // Monster 型のインスタンスになら攻撃できる attack()メソッド
         System.out.println(this.name + "の攻撃！");
-        m.hp -= 5;
-        System.out.println("5ポイントのダメージを与えた！");
+        System.out.println("敵に10のダメージを与えた");
+        m.hp -= 10;
     }
 
     public Hero() {

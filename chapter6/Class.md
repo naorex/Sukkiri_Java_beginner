@@ -44,10 +44,12 @@ Character <|-- Wizard : inheritance</br>("is-a" relation)
 classDiagram
 
 class Monster["Monster (abstract)"]{
+    +int hp
     +run()
 }
 
 class Slime{
+    +int hp
     +run()
 }
 

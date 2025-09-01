@@ -14,5 +14,9 @@ public class Main {
             // instanceof を付ける事で安全に動作するかをチェックできる
             sh.fly();
         }
+
+        Hero nh = new Hero();
+        Slime sl = new Slime();
+        nh.attack(sl);
     }
 }
