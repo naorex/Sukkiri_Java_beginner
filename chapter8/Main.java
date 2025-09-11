@@ -13,5 +13,10 @@ public class Main {
         p.printAnything(o1);
         p.printAnything(o2);
         p.printAnything(o3);
+
+        Hero h = new Hero();
+        h.setName("ミナト");
+        h.setHp(100);
+        System.out.println(h.toString());
     }
 }
