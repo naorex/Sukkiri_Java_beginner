@@ -1,6 +1,7 @@
 public class Hero {
     private String name;
     private int hp;
+    static int money; // 静的フィールド（クラス変数とも呼ぶ）
 
     public String toString() {
         // オーバーライドして既定の動作を決めておく
@@ -33,5 +34,20 @@ public class Hero {
             throw new IllegalArgumentException("HPが0以下。処理を中断");
         }
         this.hp = hp;
+    }
+
+    public boolean equals(Object o) {
+        // 等値判定の equals() を等価判定の働きになるようにオーバーライド
+        if (this == o) {
+            // 等値判定（等価判定に内包されている）
+            return true;
+        }
+        if (o instanceof Hero h) {
+            // 名前が等しければ等価判定を追加
+            if (this.name.equals(h.name)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
