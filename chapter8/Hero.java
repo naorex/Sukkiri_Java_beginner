@@ -3,6 +3,12 @@ public class Hero {
     private int hp;
     static int money; // 静的フィールド（クラス変数とも呼ぶ）
 
+    public static void setRandomMoney() {
+        // static を付けたメソッド
+        // 静的メソッド（クラスメソッドとも呼ぶ）
+        Hero.money = (int)(Math.random() * 1000);
+    }
+
     public String toString() {
         // オーバーライドして既定の動作を決めておく
         return "名前:" + this.getName() + "/HP:" + this.getHp();
